@@ -1,0 +1,307 @@
+body {
+    background-color: lightgray;
+    margin: 0;
+    height: 120%;
+}
+#logo {
+    max-height: 60px;
+}
+
+#page-controls {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.control-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#album-view {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#comment-controls-inner-wrapper {
+    margin-top: 20px;
+    margin-bottom:40px;
+}
+
+#comment-controls-wrapper {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#page-control-disp {
+    max-width: 100px;
+    font-size: 1.0rem;
+    line-height: 1.0rem;
+    height:34px;
+}
+
+.btn {
+    font-size: 1.0rem;
+    height:34px;
+}
+
+.btn-enable {
+    background-color: #5cb85c;
+    color: white;
+}
+
+#enter-new-comment:hover {
+    cursor: pointer;
+}
+
+#page-control-disp:hover {
+    background-color: white;
+}
+
+.page-ctrl-btn:hover {
+}
+
+.album-display {
+    border: 1px solid lightgray;
+}
+
+#comment-controls-wrapper {
+    margin-top: 20px;
+}
+
+#comment-box {
+    border: 1px solid lightgray;
+    background-color: white;
+    display: block;
+/*    padding: 20px 20px 20px 20px; */
+    height: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+#new-comment-inner-wrapper {
+    width:100%;
+/*
+    border: 1px solid lightgray;
+    background-color: white;
+    display: block;
+    height: 40px;
+    max-height: 40px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+*/
+}
+
+
+/* comment styles */
+
+.lt-ie9 .bubbledRight{
+    background-color: blue;
+}
+
+.lt-ie10 .bubbledRight{
+    background-color: blue;
+}
+
+@media only screen and (min-width: 1100px) {
+    .wrap {max-width:80%;}
+    .wrap p { font-size:115%;}
+    .bubbledLeft p,.bubbledRight p{
+        font-size: 130%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .wrap {max-width: 80%;}
+    .wrap p { font-size:100%;}
+    .bubbledLeft p,.bubbledRight p{
+        font-size: 110%;
+    }
+
+    #comment_header {
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .wrap {max-width:80%;}
+    .wrap p { font-size:115%;}
+    .bubbledLeft p,.bubbledRight p{
+        font-size: 130%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .wrap {max-width: 80%;}
+    .wrap p { font-size:100%;}
+    .bubbledLeft p,.bubbledRight p{
+        font-size: 110%;
+    }
+
+    #comment_header {
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .wrap {max-width:70%;}
+    .wrap p { font-size:90%;}
+    .bubbledLeft p,.bubbledRight p{
+        font-size: 90%;
+    }
+
+    .pagination a {
+        display: block;
+        float: left;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+    .pagination input {
+        height: 30px;
+        line-height: 30px;
+    }
+    a.mfp-btn
+    {
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+.bubbledLeft .delete_comment{
+    color:black;
+    width:40px;
+    height:40px;
+    opacity: 0.0;
+    position:absolute;
+    top: 0;
+    right: -15px;
+}
+
+.bubbledRight .delete_comment{
+    color:black;
+    width:40px;
+    height:40px;
+    top: 0;
+    right: 0;
+    opacity: 0.0;
+    position:absolute;
+}
+
+.bubbledLeft .delete_comment i{
+    position:absolute;
+    top: 0;
+    right:10px;
+}
+
+.bubbledRight .delete_comment i{
+    position:absolute;
+    top: 0;
+    right:10px;
+}
+
+.bubbledLeft:hover{
+    opacity:0.5;
+}
+
+.bubbledLeft:hover .delete_comment{
+    opacity:1.0;
+}
+
+.bubbledRight:hover{
+    opacity:0.5;
+}
+
+.bubbledRight:hover .delete_comment{
+    opacity:1.0;
+}
+
+
+.bubbledLeft,.bubbledRight{
+    z-index: 0;
+    position: relative;
+    margin-top: 3px;
+    max-width: 80%;
+    clear: both;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.0em;
+    line-height: 1.1em;
+    font-weight: 400;
+}
+
+.bubbledLeft p,.bubbledRight p{
+    margin-bottom: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.1em;
+    line-height:1.2em;
+    font-weight: 400;
+}
+
+.bubbledLeft{
+    float: left;
+    margin-right: auto;
+    padding: 4px 10px 4px 28px; /*position within the border*/
+    font-weight: 300;
+}
+
+.bubbledLeft::before{
+    z-index: -5;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    content: "";
+
+    border-width: 8px 14px 8px 10px;
+    /*	border: 1em solid transparent; */ /* or other fallback color */
+    -webkit-border-image: url(../img/speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+    -moz-border-image: url(../img/speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+    -o-border-image: url(../img/speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+    border-image: url(../img/speech_bubble_left_2.png) 8 10 8 17 fill stretch stretch;
+    border-style:solid;
+
+    margin-left: 10px;
+}
+
+.bubbledRight{
+    float: right;
+    margin-left: auto;
+    text-align: left;
+    color: #ffffff;
+    padding: 4px 28px 4px 15px; /*position within the border*/
+    font-weight: 100;
+}
+
+.bubbledRight::before{
+    z-index: -5;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    content: "";
+
+    border-width: 8px 14px 8px 10px;
+    /*	border: 1em transparent; */ /* or other fallback color */
+    -webkit-border-image: url(../img/speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+    -moz-border-image: url(../img/speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+    -o-border-image: url(../img/speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+    border-image: url(../img/speech_bubble_right_2.png) 8 17 8 10 fill stretch stretch;
+    border-style:solid;
+
+    margin-right: 10px;
+}
+
+.main-content {
+    display:block;
+}
+#footer-email-link {
+    display:block;
+    margin-bottom: 10px;
+    text-align: center;
+}

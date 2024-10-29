@@ -1,0 +1,15 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.album-page-row {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom-style: dotted;
+    border-bottom: darkgrey;
+}

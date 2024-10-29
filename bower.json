@@ -1,0 +1,39 @@
+{
+  "name": "ppp-album-reviewer2",
+  "version": "0.1.0",
+  "homepage": "https://github.com/eatrero/ppp-album-reviewer2",
+  "authors": [
+    "Ed Atrero <eatrero@gmail.com>"
+  ],
+  "description": "Album Reviewer allows wedding and portrait photographers to proof albums for their clients from their WordPress powered site.",
+  "keywords": [
+    "wedding",
+    "albums",
+    "album",
+    "proofing",
+    "wedding",
+    "photography",
+    "wedding",
+    "photographer",
+    "portrait",
+    "photography",
+    "client",
+    "proofing",
+    "photography",
+    "proofing"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "handlebars": "~4.0.2",
+    "jquery-validation": "~1.14.0",
+    "seiyria-bootstrap-slider": "~5.1.1"
+  }
+}
